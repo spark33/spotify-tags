@@ -25,12 +25,10 @@ const TagEditor: React.FC = () => {
     return (
         <Box>
             {tagCategories.map((category: TagCategory) => (
-                <React.Fragment key={category.id}>
-                    {category.name}
-                </React.Fragment>
+                <React.Fragment key={category.id}>{category.name}</React.Fragment>
             ))}
         </Box>
     );
-}
+};
 
 export default TagEditor;

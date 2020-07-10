@@ -7,7 +7,11 @@ const handleError = (err: AxiosError) => {
     }
 };
 
-export const axiosGet = async (url: string, headers: Record<string, unknown> = {}, params: Record<string, unknown> = {}) => {
+export const axiosGet = async (
+    url: string,
+    headers: Record<string, unknown> = {},
+    params: Record<string, unknown> = {},
+) => {
     try {
         const response: AxiosResponse = await axios.get(url, { headers, params });
         return response.data;
