@@ -1,11 +1,15 @@
 import React, { useEffect, useState } from 'react';
-import { Box } from '@material-ui/core';
+import { Box, makeStyles } from '@material-ui/core';
 import { TagCategory } from '../models/Tags';
 import { axiosGet } from '../api/base';
+import TagCategoryComponent from './TagCategoryComponent';
+
+const useStyles = makeStyles(() => ({}));
 
 const TagEditor: React.FC = () => {
     const [tagCategories, setTagCategories] = useState<TagCategory[]>([]);
     const [isLoading, setIsLoading] = useState<boolean>(true);
+    const classes = useStyles();
 
     useEffect(() => {
         try {
@@ -23,9 +27,11 @@ const TagEditor: React.FC = () => {
     }
 
     return (
-        <Box>
+        <Box p={2}>
             {tagCategories.map((category: TagCategory) => (
-                <React.Fragment key={category.id}>{category.name}</React.Fragment>
+                <React.Fragment key={category.id}>
+                    <TagCategoryComponent category={category} />
+                </React.Fragment>
             ))}
         </Box>
     );

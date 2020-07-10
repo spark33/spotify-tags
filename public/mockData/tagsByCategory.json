@@ -16,5 +16,23 @@
                 "description": "This is a description for tag 2"
             }
         ]
+    },
+    {
+        "id": 2,
+        "name": "Category 2",
+        "description": "This is the description for category 2.",
+        "color": "#00ff00",
+        "tags": [
+            {
+                "id": 3,
+                "name": "Tag 3",
+                "description": "This is a description for tag 3"
+            },
+            {
+                "id": 4,
+                "name": "Tag 4",
+                "description": "This is a description for tag 4"
+            }
+        ]
     }
 ]
