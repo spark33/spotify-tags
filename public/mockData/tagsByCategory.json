@@ -7,13 +7,11 @@
         "tags": [
             {
                 "id": 1,
-                "name": "Tag 1",
-                "description": "This is a description for tag 1"
+                "name": "Tag 1"
             },
             {
                 "id": 2,
-                "name": "Tag 2",
-                "description": "This is a description for tag 2"
+                "name": "Tag 2"
             }
         ]
     },
@@ -25,13 +23,31 @@
         "tags": [
             {
                 "id": 3,
-                "name": "Tag 3",
-                "description": "This is a description for tag 3"
+                "name": "Tag 3"
             },
             {
                 "id": 4,
-                "name": "Tag 4",
-                "description": "This is a description for tag 4"
+                "name": "Tag 4"
+            },
+            {
+                "id": 5,
+                "name": "This is tag 5"
+            },
+            {
+                "id": 6,
+                "name": "Tag 6"
+            },
+            {
+                "id": 7,
+                "name": "Tag 7"
+            },
+            {
+                "id": 8,
+                "name": "Tag 8"
+            },
+            {
+                "id": 8,
+                "name": "Tag 8"
             }
         ]
     }
