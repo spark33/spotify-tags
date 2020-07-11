@@ -50,8 +50,16 @@ theme = createMuiTheme({
                 height: '100%',
             },
         },
+        MuiPaper: {
+            root: {
+                backgroundColor: grey[100],
+            },
+        },
     },
     props: {
+        MuiPaper: {
+            elevation: 0,
+        },
         MuiButton: {
             variant: 'contained',
             color: 'primary',

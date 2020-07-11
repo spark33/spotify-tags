@@ -2,6 +2,7 @@ import { Box, Divider, Typography } from '@material-ui/core';
 import React, { useEffect } from 'react';
 import { useAppContext } from '../contexts/AppContext';
 import { TagCategory } from '../models/Tags';
+import NewCategoryComponent from './NewCategoryComponent';
 import TagCategoryComponent from './TagCategoryComponent';
 
 const TagManager: React.FC = () => {
@@ -9,7 +10,7 @@ const TagManager: React.FC = () => {
 
     useEffect(() => {
         updateTagCategories && updateTagCategories();
-    }, []);
+    }, [updateTagCategories]);
 
     return (
         <>
@@ -25,10 +26,10 @@ const TagManager: React.FC = () => {
                         <Typography>There are no tags created yet! Start by creating a tag category.</Typography>
                     )}
                     <Divider variant="middle" light />
-                    <Box mt={2}>+ Add New Category</Box>
+                    <NewCategoryComponent />
                 </Box>
             ) : (
-                <></>
+                <>Loading...</>
             )}
         </>
     );
